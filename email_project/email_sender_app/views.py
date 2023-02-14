@@ -25,7 +25,7 @@ def index(request):
         'email_sender_app/message.html',
         {
             # TODO: Enter the recipient name
-            'name': 'Recipient Name',
+            'name': 'Deepak',
             # TODO:  Update with your own body
             'body': 'This email is to verify whether we can send email in Django from Gmail account.',
             # TODO: Update the signature
@@ -34,10 +34,10 @@ def index(request):
     send_mail(
         'Congratulations!',
         'You are lucky to receive this mail.',
-        'from@example.com',  # TODO: Update this with your mail id
-        ['to@example.com'],  # TODO: Update this with the recipients mail id
+        'deepakclaudlobo@gmail.com',  # TODO: Update this with your mail id
+        ['sajiththomas162631@gmail.com','demonsaji1234@gmail.com','jaifinchacko@gmail.com'],  # TODO: Update this with the recipients mail id
         html_message=html_message,
         fail_silently=False,
     )
 
-    return HttpResponse("Mail Sent!!")
+    return HttpResponse("<h1>Mail Sent successfully.....!!</h1>")
